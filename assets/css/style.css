@@ -1,7 +1,7 @@
 :root {
-    --primary:#0c6410;
-    --secondary: #f38ad4;
-    --tirtiary: #b9c6ae;
+    --primary:#083a09;
+    --secondary: #a77720;
+    --tirtiary: #fae9d8;
   }
 
 html {
@@ -9,23 +9,30 @@ html {
 }
 
 body {
-    background-color: #fce6ce;
+    background-color: var(--primary);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100%;
+    margin: 30px;
 }
 
 header {
     Padding: 5px;
-    padding-left: 50px;
+    padding-left: 5px;
     background-color: var(--primary);
-    color: #ffffff;
-    font-size: 150%;
+    color: var(--tirtiary);
+    font-size: 280%;
+    margin-left: 30px;
+    margin-top: 40px;
+    margin-bottom: 20px;
 }
 nav {
     display: flex;
     background-color:var(--secondary);
     justify-content: flex-end;
-    margin-left: 10%;
+    padding: 8px;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    margin-bottom: 2px;
   }
 
 nav a {
@@ -33,11 +40,11 @@ nav a {
     display: inline-block;
     font-size: 100%;
     font-weight: bold;
-    padding-inline-end: 50px;
+    padding-inline-end: 80px;
 }
 
 nav a:hover {
-    color: #ffffff;
+    color: var(--tirtiary);
   }
 
 
@@ -48,15 +55,17 @@ nav a:hover {
     width: 100%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--primary);
-    color: #ffffff;
+    background-color: var(--tirtiary);
+    color: var(--primary);
 }
 
 
 .Me {
-    max-width: 30%;
+    max-width: 20%;
+    min-width: 200px;
     height:fit-content;
-    
+    margin: 20px;
+    box-shadow: 10px 5px 5px var(--primary);
 }
 
 .sections p {
@@ -73,34 +82,39 @@ nav a:hover {
     float: right;
     align-items: center;
     margin: 30px;
+    font-size: 150%;
 
 }
 .sections ul {
     font-size: 20px;
     align-items: center;
+    padding-left: 30px;
 }
 
 .Projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     padding: 20px;
     width: 100%;
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: var(--primary);
-    color: #ffffff;
+    background-color: var(--tirtiary);
+    color: var(--primary);
+    max-width: 1200px;
 }
 
 .Work {
-    max-width: 50%;
+    max-width: 200px;
 }
 .Work:hover {
-    border: 5px solid #f38ad4;
+    border: 5px solid var(--secondary);
     max-width: 60%;
 }
 
 #Work-1 {
-    max-width: 60%;
+    max-width: 80%;
+    min-width: 200px;
 }
 
 .Projects h3 {
@@ -110,18 +124,37 @@ nav a:hover {
 
 .project-pic {
     flex: 1 0 300px; 
+    margin: 20px;
 }
 
 footer {
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 2px;
+    margin-bottom: 10px;
     text-align: center;
     background: var(--secondary);
     color: var(--primary);
     display: inline-block;
     width: 100%;
-    height: 20px;
+    height: 10px;
     font-weight: bolder;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
 
-  
+  @media screen and (max-width: 768px) {
+    .sections,
+    nav {
+      flex-direction: column;
+      justify-content:center;
+      padding: 5px;
+      padding-right: 0px;
+      font-size: 75%;
+    }
+   nav a {
+     display: inline-block;
+    text-align: center;
+    padding: 10px;
+
+   }
+  }

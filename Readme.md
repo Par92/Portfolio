@@ -1,11 +1,7 @@
-# <Homework-1-Horiseon>
+# <Homework-2-Portfolio>
 
 ## Description
 
-- Project was to refactor existing code.
-- Goal was to make the code cleaner and more accessible, 
-as well as improve the website experience and make it look closer to the desired functionality.
-- Icreased the efficiency of the code by by consolidating multiple selectors and properties, 
-and renaming and ordering the semantic elements. 
-- Increased accessibility by adding the alt attribute to specify the alternative text for an image.
-- Website is aligned closer to the desired experience
+- Creating a portfolio of work to showcase my skills and talents to potential employers who are looking to fill a part-time or full-time position.
+- I want my potential future Employer to be able to review samples of my work and assess the fact that I am a good candidate for their open position. 
+- Key items I'm including; my name, photo, and links to sections about me, my work, and how to contact me. Also, I am including images of my applications and links to their locations. 
