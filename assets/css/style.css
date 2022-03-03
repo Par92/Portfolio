@@ -13,6 +13,8 @@ body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 100%;
     margin: 30px;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 header {
@@ -72,10 +74,7 @@ nav a:hover {
     font-size: 1.3em;
     display: block;
     max-width: 50%;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 60px;
-    margin-right: 60px;
+    margin: 5%;
 }
 .sections h2 {
     display: flex;
